@@ -71,20 +71,15 @@ document.addEventListener('DOMContentLoaded', function() {
         sendDropdown.value = receiveDropdown.value;
         receiveDropdown.value = temp;
         convertCurrency();
+        updateImage();
     }
 
     inputAmount.addEventListener('input', convertCurrency);
     sendDropdown.addEventListener('change', convertCurrency);
     receiveDropdown.addEventListener('change', convertCurrency);
     swapButton.addEventListener('click', swapCurrencies);
-});
 
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    const sendDropdown = document.getElementById('send-dropdown');
     const sendImg = document.getElementById('send-img');
-    const receiveDropdown = document.getElementById('receive-dropdown');
     const receiveImg = document.getElementById('receive-img');
 
     const imagePaths = {
@@ -104,5 +99,4 @@ document.addEventListener('DOMContentLoaded', function() {
     sendDropdown.addEventListener('change', updateImage);
     receiveDropdown.addEventListener('change', updateImage);
     updateImage();
-    updateImage();
-  });
+});
