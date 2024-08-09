@@ -1,0 +1,139 @@
+
+
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+  background: #fcfef3;
+  border-radius:10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 500px;
+  width:100%;
+  
+}
+
+h5{
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+  color:#17576f;
+}
+
+
+#main{
+  display:flex;
+  flex-direction:column;
+  gap:30px;
+  margin-bottom:30px;
+}
+
+
+#mini1{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color:#cee9f5;
+  padding:20px;
+  border-radius:10px;
+}
+
+#mini2{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color:#cee9f5;
+  padding:20px;
+  border-radius:10px;
+}
+
+.selection{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  font-weight:bold;
+
+}
+
+label{
+  display:flex;
+  align-items:center;
+  font-size: 16px;
+  color:#2384a8;
+  font-weight: bold;
+}
+
+label img{
+  width:24px;
+  height:auto;
+  margin-bottom:20px;
+  padding-right:10px;
+}
+
+select{
+  width: 100%;
+  padding: 10px;
+  margin-bottom:20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: #fcfef3;
+  cursor: pointer;
+  appearance: none;
+  color:#2384a8;
+}
+
+select option{
+  color:#2384a8;
+
+}
+
+
+#swapbutton{
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: #cee9f5;
+  border-radius: 50%;
+  cursor: pointer;
+  align-self: center;
+  margin:-20px;
+}
+
+#swapbutton img{
+  width:25px;
+  height:auto;
+}
+
+#swapbutton:hover {
+  background-color: #2384a8;
+}
+
+input{
+  font-size:20px;
+  border:none;
+  background-color:#cee9f5;
+  outline:none;
+  color:#17576f;
+  border-bottom: 1px solid #bdbebe;
+  text-shadow:0 0 2px #bdbebe;
+  -webkit-box-shadow: 0 1px 6px -2px #bdbebe;
+   -moz-box-shadow: 0 8px 6px -6px #bdbebe;
+        box-shadow: 0 8px 6px -2px #bdbebe;
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button 
+{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+p{
+  font-size:14px;
+  color:#2384a8;
+}

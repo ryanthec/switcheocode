@@ -1,0 +1,63 @@
+<html>
+
+<head>
+  <title>Currency Swap</title>
+
+  <!-- You may add more stuff here -->
+  <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- You may reorganise the whole HTML, as long as your form achieves the same effect. -->
+  <form onsubmit="return !1">
+    <h5>Currency Converter</h5>
+
+      
+      <div id="main">
+        <div id="mini1">
+          <div class="selection">
+            <label for="send-dropdown">
+              <img id="send-img" src="" alt="logo"/>
+            </label>
+                <select id = "send-dropdown" name="tokens">
+                  <option value="" disabled selected id="unselected">Select a token</option>
+                  <option value="USD">USD</option>
+                  <option value="BTC">BTC</option>
+                  <option value="ETH">ETH</option>
+                  <option value="SOL">SOL</option>
+                </select>
+          </div>
+          <label for="input-amount">Amount to send</label>
+          <input id="input-amount" type="number" min="0" />
+          <p id="send-usd-conversion"></p>
+        </div>
+        
+        <button id="swapbutton">
+          <img src="./images/updown.png" alt="swap" /> 
+        </button>
+        
+        <div id="mini2">
+          <div class="selection">
+            <label for="receive-dropdown">
+              <img id="receive-img" src="" alt="btc"/>
+            </label>
+                <select id = "receive-dropdown" name="tokens">
+                  <option value="" disabled selected id="unselected">Select a token</option>
+                  <option value="USD">USD</option>
+                  <option value="BTC">BTC</option>
+                  <option value="ETH">ETH</option>
+                  <option value="SOL">SOL</option>
+                </select>
+          </div>
+          <label for="output-amount">Amount to receive</label>
+          <input id="output-amount" type="number" min="0"/>
+          <p id="receive-usd-conversion"></p>
+        </div>
+      </div>
+
+  </form>
+  <script src="script.js"></script>
+</body>
+
+</html>
